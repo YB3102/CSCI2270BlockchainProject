@@ -18,17 +18,6 @@ The process of mining and pushing a new block to the chain is performed by gener
 
 This hash can be used to safely traverse through the chain and keep a track of the blocks in the chain. 
 
-One of the .hpp files for this program was modified by me.
-In Block.hpp;
-* The vector of transactions was moved to public instead of private.
-* Getter functions for previousHash and Hash were also defined and added by me.
-
-I also made a main_2.cpp file separate from main_1.cpp in the app_1 folder.
-The main_2.cpp file is the menu style program for the project as recommended in the reading document.
-main_1.cpp has been left unedited except for some testing comments.
-
 The files and code have been compiled using the following command in wsl terminal:
 g++ -std=c++17 code_1/Blockchain.cpp code_1/Block.cpp code_1/sha256.cpp code_1/Transaction.cpp app_1/main_1.cpp
 g++ -std=c++17 code_1/Blockchain.cpp code_1/Block.cpp code_1/sha256.cpp code_1/Transaction.cpp app_1/main_2.cpp
-
-They have also been confirmed to work with cmake. 
