@@ -18,6 +18,6 @@ The process of mining and pushing a new block to the chain is performed by gener
 
 This hash can be used to safely traverse through the chain and keep a track of the blocks in the chain. 
 
-The files and code have been compiled using the following command in wsl terminal:
-g++ -std=c++17 code_1/Blockchain.cpp code_1/Block.cpp code_1/sha256.cpp code_1/Transaction.cpp app_1/main_1.cpp
-g++ -std=c++17 code_1/Blockchain.cpp code_1/Block.cpp code_1/sha256.cpp code_1/Transaction.cpp app_1/main_2.cpp
+The files and code have been compiled using the following command in wsl terminal: <br>
+g++ -std=c++17 code_1/Blockchain.cpp code_1/Block.cpp code_1/sha256.cpp code_1/Transaction.cpp app_1/main_1.cpp <br>
+g++ -std=c++17 code_1/Blockchain.cpp code_1/Block.cpp code_1/sha256.cpp code_1/Transaction.cpp app_1/main_2.cpp <br>
