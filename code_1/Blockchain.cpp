@@ -27,7 +27,6 @@ Block Blockchain::getLatestBlock() {
 }
 
 void Blockchain::addTransaction(string src, string dst, int coins) {
-    // TODO
 
     int balanceCheck = getBalanceOfAddress(src); //calling get balance address
 
@@ -63,7 +62,6 @@ void Blockchain::addTransaction(string src, string dst, int coins) {
 }
 
 bool Blockchain::isChainValid() { 
-    // TODO
 
     for (unsigned int i = 1; i < chain.size(); i++) //starting the check from the 1st position of hash
     {   
@@ -93,7 +91,6 @@ bool Blockchain::isChainValid() {
 }
 
 bool Blockchain::minePendingTransactions(string minerAddress) {
-    // TODO
 
     if (isChainValid() == false)
     {
@@ -118,7 +115,6 @@ bool Blockchain::minePendingTransactions(string minerAddress) {
 }
 
 int Blockchain::getBalanceOfAddress(string address) {
-    // TODO
 
     int totalBalance = 0;
 
@@ -163,7 +159,6 @@ int Blockchain::getBalanceOfAddress(string address) {
 }
 
 void Blockchain::prettyPrint() {
-    // TODO
 
     cout << "The list of verified transactions is as follows: " << endl;
 
