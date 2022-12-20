@@ -25,13 +25,11 @@ string Block::getHash() {
 }
 
 void Block::setPreviousHash(string _previousHash) {
-    // TODO
-
+    
     previousHash = _previousHash;
 }
 
 string Block::calculateHash() {
-    // TODO
 
     string build = toString(); //using the toString function to convert the nonce, timestamp and previousHash to a string
 
@@ -44,7 +42,6 @@ string Block::calculateHash() {
 }
 
 void Block::mineBlock(unsigned int difficulty) {
-    // TODO
 
     string compare = ""; //initializing the comparison string for #difficulty digits of 0
 
@@ -63,7 +60,6 @@ void Block::mineBlock(unsigned int difficulty) {
 }
 
 string Block::toString() {
-    // TODO
 
     stringstream ss;
     ss << "(" << nonce << ", "  << previousHash << ", " << timestamp << ")";
